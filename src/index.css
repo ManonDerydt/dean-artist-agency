@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  outline: none;
+  margin: 0 auto;
+}
+
+.App-header{
+  background: black;
+  color: white;
+}
