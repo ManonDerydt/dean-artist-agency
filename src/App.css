@@ -408,15 +408,6 @@ a:hover {
     padding-bottom: 2%;
 }
 
-.Menu{
-    background: white;
-    height: 4em;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-}
-
 .ul-menu{
     display: flex;
     margin: 0 auto;
@@ -500,6 +491,63 @@ a:hover {
 .show {
     opacity: 1;
 }
+
+.Menu {
+    background: white;
+    height: 4em;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 1em;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.menu-burger {
+    height: 2em;
+}
+
+.menu-content {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    height: 100vh;
+}
+
+.ul-menu {
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    top: 20%;
+    position: relative;
+}
+
+.ul-menu li {
+    margin-bottom: 1em;
+}
+
+.li {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+
 
 
 
