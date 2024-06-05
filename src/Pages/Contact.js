@@ -14,7 +14,6 @@ function Contact() {
             <Menu/>
             <div className="content-customers">
                 <div>
-                    <img src={poudre} className="poudre"/>
                     <Fade top delay={700}>
                         <h2 className="title-customers">CONTACT</h2>
                     </Fade>
@@ -38,26 +37,22 @@ function Contact() {
                                 <input type="email" id="email" name="email" required />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="societe">Nom de la société</label>
-                                <input type="text" id="societe" name="societe" required />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="entreprise">Nom de l'entreprise</label>
+                                <label htmlFor="entreprise">Raison sociale</label>
                                 <input type="text" id="entreprise" name="entreprise" required />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="objet">Objet de la demande</label>
+                                <label htmlFor="objet">Objet</label>
                                 <textarea id="objet" name="objet" rows="4" required></textarea>
                             </div>
                             <button type="submit" className="submit-button">Envoyer</button>
                         </form>
                     </Fade>
 
-                    <div className="content-info">
-                        <h2>PARIS</h2>
-                        <p>20 rue de la Baume, 7th floor 75008 Paris, France</p>
-                        <p>Main +33 1 7305 9696</p>
-                    </div>
+                    {/*<div className="content-info">*/}
+                    {/*    <h2>PARIS</h2>*/}
+                    {/*    <p>20 rue de la Baume, 7th floor 75008 Paris, France</p>*/}
+                    {/*    <p>Main +33 1 7305 9696</p>*/}
+                    {/*</div>*/}
                 </div>
             </div>
             <Footer/>

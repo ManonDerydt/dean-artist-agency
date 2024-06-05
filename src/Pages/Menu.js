@@ -31,14 +31,15 @@ function Menu() {
                                             <Link to="/" className="li">Accueil</Link>
                                         </li>
                                         <li>
-                                            <Link to="/talents" className="li">Nos artistes</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/partners" className="li">Nos clients</Link>
-                                        </li>
-                                        <li>
                                             <Link to="/us" className="li">Qui sommes-nous</Link>
                                         </li>
+                                        <li>
+                                            <Link to="/talents" className="li">Nos artistes</Link>
+                                        </li>
+                                        {/*<li>*/}
+                                        {/*    <Link to="/partners" className="li">Nos clients</Link>*/}
+                                        {/*</li>*/}
+
                                         <li>
                                             <Link to="/portefolios" className="li">Portefolios</Link>
                                         </li>

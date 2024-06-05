@@ -4,7 +4,7 @@ import '../App.css';
 function SplashScreen({ onFinish }) {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [fadeOut, setFadeOut] = useState(false);
-    const words = ["makeup", "esthétique", "coiffure"];
+    const words = ["MAKEUP", "NAILS", "HAIR", "DEAN"];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -19,21 +19,28 @@ function SplashScreen({ onFinish }) {
             });
         }, 1500); // Afficher chaque mot pendant 1.5 secondes
         return () => clearInterval(interval);
-    }, [words.length, onFinish]);
+    }, [words.length]);
 
     useEffect(() => {
         if (fadeOut) {
-            setTimeout(onFinish, 1000); // Synchroniser avec la durée de l'animation de disparition
+            setTimeout(() => {
+                onFinish();
+            }, 1000);
         }
     }, [fadeOut, onFinish]);
 
     return (
         <div className={`splash-screen ${fadeOut ? 'fade-out' : ''}`}>
             <div className="splash-content">
-                <h1 className="splash-title">Dean Artist</h1>
-                <h2 key={currentWordIndex} className="splash-word fade-in-out">
+                <h2
+                    key={currentWordIndex}
+                    className={`splash-word fade-in-out ${
+                        currentWordIndex === words.length - 1 ? 'final-word' : ''
+                    }`}
+                >
                     {words[currentWordIndex]}
                 </h2>
+                <h1 className="splash-title">ARTIST</h1>
             </div>
         </div>
     );

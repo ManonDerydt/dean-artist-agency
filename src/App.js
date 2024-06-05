@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 import Header from "./Pages/Header";
 import Customers from "./Pages/Customers";
 import Contact from "./Pages/Contact";
@@ -9,6 +8,7 @@ import Portefolios from "./Pages/Portefolios";
 import Talents from "./Pages/Talents";
 import Dean from "./Pages/Dean";
 import SplashScreen from "./Pages/Splashscreen";
+import ComingSoon from "./Pages/ComingSoon";
 
 function App() {
     const [showSplash, setShowSplash] = useState(true);
@@ -29,6 +29,7 @@ function App() {
                         <Route path="/portefolios" element={<Portefolios />} />
                         <Route path="/talents" element={<Talents />} />
                         <Route path="/us" element={<Dean />} />
+                        <Route path="/soon" element={<ComingSoon />} />
                         <Route path="/" element={<Header />} />
                     </Routes>
                 </BrowserRouter>
