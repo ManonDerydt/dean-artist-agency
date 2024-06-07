@@ -11,13 +11,15 @@ function Slogan() {
         <div>
             <Menu/>
             <div className="section-dean">
-                <img src={Dean} className="img-dean"/>
+                <img src="https://deanartist.com/wp-content/uploads/2021/12/dean-artist-team-accueil-min.jpg"
+                     className="img-dean" alt="Dean Artist Team"/>
                 <div>
                     <Fade top delay={700} duration={1000}>
-                        <h2 className="title-dean">DEAN WILSON</h2>
+                        <h2 className="title-dean">NOTRE EQUIPE</h2>
                     </Fade>
                     <p className="txt-dean">
-                        Maquilleuse depuis 2013 et entrepreneuse passionnée, ma vocation est de montrer que les métiers
+                        <span className="M">M</span>aquilleuse depuis 2013 et entrepreneuse passionnée, ma vocation est
+                        de montrer que les métiers
                         de
                         la beauté peuvent être vecteurs de sens et de créativité.
                         Animée par une passion pour la beauté et convaincue de son pouvoir d'empowerment, j'ai fondé

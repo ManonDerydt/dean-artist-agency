@@ -10,6 +10,8 @@ import mode5 from '../assets/talent5.jpg';
 import Menu from "./Menu";
 import Footer from "./Footer";
 import {Fade} from "react-reveal";
+import PortefolioByTalent from "./PortefoliosByTalent";
+import {Link} from "react-router-dom";
 
 const Talents = () => {
     const [shrinkIndex, setShrinkIndex] = useState(null);
@@ -66,7 +68,9 @@ const Talents = () => {
 
                             {shrinkIndex === 0 && (
                                 <Fade right duration={2000}>
-                                    <a className="portefolios-link">Portefolio</a>
+                                    <Link to="/talent-image" className="portefolios-link">
+                                        Portefolio
+                                    </Link>
                                 </Fade>
                             )}
                         </div>
@@ -97,7 +101,9 @@ const Talents = () => {
 
                             {shrinkIndex === 1 && (
                                 <Fade right duration={2000}>
-                                    <a className="portefolios-link">Portefolio</a>
+                                    <Link to="/talent-image" className="portefolios-link">
+                                        Portefolio
+                                    </Link>
                                 </Fade>
                             )}
                         </div>
@@ -128,7 +134,9 @@ const Talents = () => {
 
                             {shrinkIndex === 2 && (
                                 <Fade right duration={2000}>
-                                    <a className="portefolios-link">Portefolio</a>
+                                    <Link to="/talent-image" className="portefolios-link">
+                                        Portefolio
+                                    </Link>
                                 </Fade>
                             )}
                         </div>
@@ -159,7 +167,9 @@ const Talents = () => {
 
                             {shrinkIndex === 4 && (
                                 <Fade right duration={2000}>
-                                    <a className="portefolios-link">Portefolio</a>
+                                    <Link to="/talent-image" className="portefolios-link">
+                                        Portefolio
+                                    </Link>
                                 </Fade>
                             )}
                         </div>
@@ -190,7 +200,9 @@ const Talents = () => {
 
                             {shrinkIndex === 5 && (
                                 <Fade right duration={2000}>
-                                    <a className="portefolios-link">Portefolio</a>
+                                    <Link to="/talent-image" className="portefolios-link">
+                                        Portefolio
+                                    </Link>
                                 </Fade>
                             )}
                         </div>
@@ -221,7 +233,9 @@ const Talents = () => {
 
                             {shrinkIndex === 6 && (
                                 <Fade right duration={2000}>
-                                    <a className="portefolios-link">Portefolio</a>
+                                    <Link to="/talent-image" className="portefolios-link">
+                                        Portefolio
+                                    </Link>
                                 </Fade>
                             )}
                         </div>
@@ -230,7 +244,6 @@ const Talents = () => {
             </div>
             <Footer/>
         </div>
-
     );
 };
 

@@ -9,6 +9,7 @@ import Talents from "./Pages/Talents";
 import Dean from "./Pages/Dean";
 import SplashScreen from "./Pages/Splashscreen";
 import ComingSoon from "./Pages/ComingSoon";
+import PortefolioByTalent from "./Pages/PortefoliosByTalent";
 
 function App() {
     const [showSplash, setShowSplash] = useState(true);
@@ -30,6 +31,7 @@ function App() {
                         <Route path="/talents" element={<Talents />} />
                         <Route path="/us" element={<Dean />} />
                         <Route path="/soon" element={<ComingSoon />} />
+                        <Route path="/talent-image" element={<PortefolioByTalent />} />
                         <Route path="/" element={<Header />} />
                     </Routes>
                 </BrowserRouter>
