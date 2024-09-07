@@ -30,7 +30,7 @@ function Header() {
             </div>
         </div>,
         <div key={3} className="slide-container">
-            <img src={mode2} className="slide" alt="Mode 2" />
+            <img src={mode2} className="slide" alt="Mode 2"/>
         </div>
         // Ajoutez plus de diapositives si nécessaire
     ];
@@ -44,6 +44,8 @@ function Header() {
         autoplay: false,
         arrows: false, // Supprimer les flèches de navigation
     };
+
+
 
     return (
         <div className="App">

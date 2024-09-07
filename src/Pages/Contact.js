@@ -3,15 +3,14 @@ import React, { useRef, useEffect } from 'react';
 import poudre from "../assets/Maquillage.png";
 // eslint-disable-next-line no-unused-vars
 import {Fade} from "react-reveal";
-import Menu from "./Menu";
 import Footer from "./Footer";
-import marque from "../assets/marque1.webp";
+import MenuBlack from "./MenuBlack";
 
 function Contact() {
 
     return (
         <div className="App">
-            <Menu/>
+            <MenuBlack/>
             <div className="content-customers">
                 <div>
                     <Fade top delay={700}>
@@ -22,23 +21,23 @@ function Contact() {
                         <form className="contact-form">
                             <div className="form-group">
                                 <label htmlFor="nom">Nom</label>
-                                <input type="text" id="nom" name="nom" required />
+                                <input type="text" id="nom" name="nom" required/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="prenom">Prénom</label>
-                                <input type="text" id="prenom" name="prenom" required />
+                                <input type="text" id="prenom" name="prenom" required/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="telephone">Numéro de téléphone</label>
-                                <input type="tel" id="telephone" name="telephone" required />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="email">Adresse email</label>
-                                <input type="email" id="email" name="email" required />
+                                <input type="tel" id="telephone" name="telephone" required/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="entreprise">Raison sociale</label>
-                                <input type="text" id="entreprise" name="entreprise" required />
+                                <input type="text" id="entreprise" name="entreprise" required/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Adresse email</label>
+                                <input type="email" id="email" name="email" required/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="objet">Objet</label>

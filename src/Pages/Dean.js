@@ -4,12 +4,13 @@ import Dean from "../assets/dean.jpeg";
 import Menu from "./Menu";
 import {Fade} from "react-reveal";
 import Footer from "./Footer";
+import MenuBlack from "./MenuBlack";
 
 function Slogan() {
 
     return (
-        <div>
-            <Menu/>
+        <div className="page-white">
+            <MenuBlack/>
             <div className="section-dean">
                 <img src="https://deanartist.com/wp-content/uploads/2021/12/dean-artist-team-accueil-min.jpg"
                      className="img-dean" alt="Dean Artist Team"/>

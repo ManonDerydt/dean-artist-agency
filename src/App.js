@@ -33,6 +33,7 @@ function App() {
                         <Route path="/soon" element={<ComingSoon />} />
                         <Route path="/talent-image" element={<PortefolioByTalent />} />
                         <Route path="/" element={<Header />} />
+                        <Route path="/portefolio/:talentName" element={<PortefolioByTalent />} />
                     </Routes>
                 </BrowserRouter>
             )}

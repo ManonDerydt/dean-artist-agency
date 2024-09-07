@@ -7,7 +7,7 @@ function SplashScreen({ onFinish }) {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [fadeOut, setFadeOut] = useState(false);
     const [showLogo, setShowLogo] = useState(false);
-    const words = ["MAKEUP", "NAILS", "HAIR", "DEAN"];
+    const words = ["MAKEUP", "HAIR", "NAILS", "DEAN"];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,14 +18,14 @@ function SplashScreen({ onFinish }) {
                     clearInterval(interval);
                     setTimeout(() => {
                         setFadeOut(true);
-                    }, 1500); // Delay before fading out the page
+                    }, 1200);
                     setTimeout(() => {
                         setShowLogo(true);
-                    }, 100); // Delay before showing the logo
+                    }, 100);
                     return prevIndex;
                 }
             });
-        }, 1500); // Display each word for 1.5 seconds
+        }, 1200);
         return () => clearInterval(interval);
     }, [words.length]);
 
@@ -33,11 +33,11 @@ function SplashScreen({ onFinish }) {
         if (fadeOut) {
             setTimeout(() => {
                 onFinish();
-            }, 1500); // Synchronize with fade-out animation duration
+            }, 1200);
         }
     }, [fadeOut, onFinish]);
 
-    const isSpecialWord = word => ["NAILS", "HAIR", "DEAN"].includes(word);
+    const isSpecialWord = word => ["HAIR","NAILS", "DEAN"].includes(word);
 
     return (
         <div className={`splash-screen ${fadeOut ? 'fade-out-move' : ''}`}>
